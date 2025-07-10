@@ -55,3 +55,26 @@ public ActionResult Put(int id, [FromBody] Produto produto){...}
 4. `FromHeader`: dados que vêm no cabeçalho da requisição HTTP
 5. `FromBody`: dados recebidos do `body` da requisição
 6. `FromServices`: vincula o valor especificado à implementação que foi configurado no `container de injeção de depedência`.
+
+**Atributo [FromServices]**
+
+Sobrescreve a fonte de associação injetando os valores via `injeção de dependência` em um nétodo `Action específico`.
+
+Permite injetar as dependências diretamente no método `Action` do controlador que requer a dependência.
+
+Habilita a injeção de um serviço diretamente em um método Action `sem usar a injeção de construtor`.
+
+**A vantagem do `[FromServices]` em relação a `Injeção via Construtor`:**
+
+- Mantém o construtor do controlador mais limpo.
+- Injeta dependências apenas onde realmente são necessárias.
+- Facilita a leitura e manutenção do código, principalmente em controladores com muitas Actions e dependências variadas.
+
+Modo de uso:
+
+Antes...
+- Definir os serviços
+- Registrar os serviços
+- Aplicar o atributo [FromServices] ao método Action que requer o serviço
+
+Apartir do .NET 7 a dependência é resolvida por inferência, sem a necessidade de usar [FromServices] no método Action.
