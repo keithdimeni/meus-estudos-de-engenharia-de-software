@@ -33,7 +33,7 @@ public Produto Get()
 
 ### Tipo IActionResult
 
-Apropriado quando vários tipos de retorno ActionResult são possíveis em método Action.
+Apropriado quando vários tipos de retorno ActionResult possíveis em método Action.
 
 Não retorna diretamente o tipo de dados(string, int, etc.).
 ``` bash
