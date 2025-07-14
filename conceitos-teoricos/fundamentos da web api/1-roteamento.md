@@ -24,7 +24,7 @@ e métodos Acion.
 
 Os `Atributos` mapeam para `Actions` e `Controladores`
 
-Os atributos para definir rotas são: `HttpGet` `HttpPost` `HttpPut` `HttpDelete`
+Os atributos para definir rotas são: `HttpGet` `HttpPost` `HttpPut` `HttpDelete` `HttpPatch`
 
 ## Padrões de roteamento
 
