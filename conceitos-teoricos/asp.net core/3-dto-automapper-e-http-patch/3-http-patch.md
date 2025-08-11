@@ -26,7 +26,7 @@ O Cliente da API deve enviar, no `body da requisição http`, informações que 
 A operação possui 3 propriedades:
 
 - `op`: Define o tipo de operação a ser realizada. Ex: `add`, `remove`, etc.
-- `patch`: define o caminho da propriedade do objeto que você quer atingir. Ex: `\nome`.
+- `path`: define o caminho da propriedade do objeto que você quer atingir. Ex: `\nome`.
 - `value`: define o valor a ser usado na operação.
 
 ``` json
